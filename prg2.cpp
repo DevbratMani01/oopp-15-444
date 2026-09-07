@@ -2,7 +2,7 @@
 using namespace std;
 
 void show(int a ,int b){
-    cout<<"a : "<<a<<" ' y : "<<b<<endl;    
+    cout<<"a : "<<a<<" b : "<<b<<endl;    
 }
 void swapByVal(int a , int b){
     int c;

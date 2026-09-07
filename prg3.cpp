@@ -19,8 +19,9 @@ public:
 
 int main() {
     Operators obj;
-    cout << obj.sum(2, 3, 4, 5) << endl;
+    cout << obj.sum(1,2,3,43) << endl;
     cout << obj.sum(2,5,5) << endl;
+    cout<<obj.sum(2)<<endl;
     cout << obj.diff(5,7) << endl;
     return 0;
 }
