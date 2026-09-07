@@ -12,7 +12,7 @@ public:
         name = "Unknown";
         rollNo = 0;
         marks = new int(0);
-        cout << "[Default Constructor] called for rollNo " << rollNo << endl;
+        cout << "Default Constructor called for rollNo " << rollNo << endl;
     }
 
     Student(string n, int r, int m) {
