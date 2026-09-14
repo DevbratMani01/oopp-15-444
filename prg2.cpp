@@ -45,14 +45,14 @@ int main() {
     cout << "Value before Swap" << endl;
     show(x, y);
     swapByAddress(&x, &y);
-    cout << "Value in main after swapByAddress (changed): ";
+    cout << "Value in main after swapByAddress (changed): "<<endl;
     show(x, y);
 
-    cout << "\nSwapping by Reference " << endl;
+    cout << "Swapping by Reference " << endl;
     cout << "Value before Swap" << endl;
     show(x, y);
     swapByRef(x, y);
-    cout << "Value in main after swapByRef (changed): ";
+    cout << "Value in main after swapByRef (changed): "<<endl;
     show(x, y);
 
     return 0;
