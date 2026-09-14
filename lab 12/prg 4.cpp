@@ -15,6 +15,7 @@ class Point{
         return Point(x + t.x , y + t.y);
     }
 };
+
 ostream &operator<<(ostream &os , Point t){
     os << t.x << "," << t.y << endl;
     return os;
