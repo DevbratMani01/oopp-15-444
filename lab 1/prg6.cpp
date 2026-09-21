@@ -26,13 +26,13 @@ public:
     Student(const Student &s) {
         name = s.name;
         rollNo = s.rollNo;
-        marks = new int(*s.marks);   // deep copy, not just pointer copy
-        cout << "[Copy Constructor] called for " << name
-             << " (rollNo " << rollNo << ")" << endl;
+        marks = new int(*s.marks);  
+        cout << "Copy Constructor called for " << name
+             << " rollNo " << rollNo  << endl;
     }
 
     Student& operator=(const Student &s) {
-        cout << "[Copy Assignment Operator] called for " << s.name << endl;
+        cout << "Copy Assignment Operator called for " << s.name << endl;
         if (this == &s) return *this;   
         delete marks;     
         name = s.name;
@@ -46,8 +46,8 @@ public:
     }
 
     ~Student() {
-        cout << "[Destructor] called for " << name
-             << " (rollNo " << rollNo << ")" << endl;
+        cout << "Destructor called for " << name
+             << " rollNo " << rollNo << ")" << endl;
         delete marks;  
     }
 };
